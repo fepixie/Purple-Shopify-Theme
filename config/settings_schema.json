@@ -1,11 +1,11 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Purple Shopify Theme",
+    "theme_name": "Purple Shopify Theme!",
     "theme_version": "0.0.1",
     "theme_author": "FePixie",
-    "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes/os20/themes-by-shopify/dawn",
-    "theme_support_url": "https://support.shopify.com/"
+    "theme_documentation_url": "https:\/\/help.shopify.com\/manual\/online-store\/themes\/os20\/themes-by-shopify\/dawn",
+    "theme_support_url": "https:\/\/support.shopify.com\/"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -17,7 +17,7 @@
       {
         "type": "color",
         "id": "colors_solid_button_labels",
-        "default": "#800080",
+        "default": "#ffffff",
         "label": "t:settings_schema.colors.settings.colors_solid_button_labels.label",
         "info": "t:settings_schema.colors.settings.colors_solid_button_labels.info"
       },
@@ -297,7 +297,6 @@
         "label": "t:settings_schema.search_input.settings.predictive_search_show_price.label",
         "info": "t:settings_schema.search_input.settings.predictive_search_show_price.info"
       }
-
     ]
   },
   {

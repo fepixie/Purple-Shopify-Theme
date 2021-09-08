@@ -1,17 +1,60 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+      }
     },
     "form": {
       "type": "contact-form",
       "settings": {
         "heading": ""
       }
+    },
+    "1631094722616661f2": {
+      "type": "collage",
+      "blocks": {
+        "1631094722616661f2-0": {
+          "type": "video",
+          "settings": {
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video",
+            "image_padding": false
+          }
+        },
+        "1631094722616661f2-1": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "second_image": false,
+            "image_padding": false,
+            "secondary_background": false
+          }
+        },
+        "1631094722616661f2-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_padding": false,
+            "color_scheme": "background-1"
+          }
+        }
+      },
+      "block_order": [
+        "1631094722616661f2-0",
+        "1631094722616661f2-1",
+        "1631094722616661f2-2"
+      ],
+      "settings": {
+        "heading": "Multimedia collage",
+        "desktop_layout": "left",
+        "mobile_layout": "collage"
+      }
     }
   },
   "order": [
     "main",
-    "form"
+    "form",
+    "1631094722616661f2"
   ]
 }
