@@ -3,10 +3,10 @@
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#800080",
     "colors_accent_2": "#5433b4",
-    "colors_text": "#2E0554",
+    "colors_text": "#2e0554",
     "colors_outline_button_labels": "#5b0da3",
-    "colors_background_1": "#FFFFFF",
-    "colors_background_2": "#F3F3F3",
+    "colors_background_1": "#ffffff",
+    "colors_background_2": "#f3f3f3",
     "type_header_font": "arapey_n4",
     "type_body_font": "assistant_n4",
     "accent_icons": "accent-1",
@@ -32,7 +32,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
+          "color_scheme": "accent-1",
           "logo_width": 100,
           "logo_position": "middle-left",
           "menu": "main-menu",
