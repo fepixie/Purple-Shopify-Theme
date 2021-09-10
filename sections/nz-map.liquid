@@ -14,6 +14,18 @@
       
       
         {%- if section.settings.cover_image != blank -%}
+      
+      <img id="{{ img_id }}"
+    class="lazyload"
+    src="{{ section.settings.cover_image.image | img_url: '300x300' }}"
+    data-src="{{ img_url }}"
+    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+    data-aspectratio="{{ section.settings.cover_image.image.aspect_ratio }}"
+    data-sizes="auto"
+    alt="{{ section.settings.cover_image.image.alt | escape }}">
+      
+      
+      
           <img
             srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
               {%- if section.settings.cover_image.width >= 750 -%}{{ section.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
