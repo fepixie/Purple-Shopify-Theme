@@ -71,12 +71,23 @@
       "label": "Map Description",
       "info": "Printed under the map"
     },
-    {
-      "type": "checkbox",
-      "id": "full_width",
-      "label": "Full width?",
-      "default": false
-    }
+	{
+          "type": "select",
+          "id": "layout1",
+          "options": [
+            {
+              "value": "side",
+              "label": "Side by side"
+            },
+            {
+              "value": "over",
+              "label": "Over Under"
+            }            
+          ],
+          "default": "side",
+          "label": "Display Layout",
+          "info": "How to display your map"
+        }
   ],
   "presets": [
     {
