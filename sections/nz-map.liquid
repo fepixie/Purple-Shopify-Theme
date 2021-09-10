@@ -1,5 +1,5 @@
-<div class="nz-map-section{% unless section.settings.full_width %} page-width{% endunless %}">
-  <div{% if section.settings.full_width %} class="page-width"{% endif %}>
+<div class="nz-map-section page-width">
+  <div>
     <h2 class="title">{{ section.settings.heading }}</h2>
     
     {% if section.settings.layout1 == 'side' %}
@@ -59,7 +59,7 @@
  {
   "name": "NZ Map",
   "tag": "section",
-  "class": "spaced-section spaced-section--full-width",
+  "class": "spaced-section",
   "settings": [
     {
       "type": "text",
