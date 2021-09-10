@@ -5,6 +5,11 @@
     <div class="nz-map-section__media"
       {% if section.settings.cover_image != blank %} style="padding-bottom: {{ 1 | divided_by: section.settings.cover_image.aspect_ratio | times: 100 }}%;"{% endif %}
     >
+      {% if section.settings.layout1 == 'side' %}
+        <div class="grid grid--1-col grid--2-col-tablet">
+    	<div class="grid__item">
+      {%- endif -%}
+      
       
         {%- if section.settings.cover_image != blank -%}
           <img
@@ -28,8 +33,18 @@
         {%- endif -%}
      
     </div>
+          
+     {% if section.settings.layout1 == 'side' %}     
+     	</div>
+  		<div class="grid__item">
+     {%- endif -%}
+          
     <p class="">{%- if section.settings.description != blank -%} {{ section.settings.description }} {%- endif -%}</p>
     
+     {% if section.settings.layout1 == 'side' %}     
+     	</div>  
+      	</div> 
+     {%- endif -%}
     
   </div>
   
