@@ -4,9 +4,18 @@
       "type": "main-page",
       "settings": {
       }
+    },
+    "1631265523c28308b3": {
+      "type": "nz-map",
+      "settings": {
+        "heading": "NZ Map",
+        "description": "",
+        "full_width": false
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1631265523c28308b3"
   ]
 }
