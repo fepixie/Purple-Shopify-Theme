@@ -15,32 +15,15 @@
       
         {%- if section.settings.cover_image != blank -%}
       
-      <img id="{{ img_id }}"
-    class="lazyload"
-    src="{{ section.settings.cover_image | img_url: '300x300' }}"
-    data-src="{{ img_url }}"
-    data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
-    data-aspectratio="{{ section.settings.cover_image.aspect_ratio }}"
-    data-sizes="auto"
-    alt="{{ section.settings.heading | escape }}">
+      <img class="lazyload"
+        src="{{ section.settings.cover_image | img_url: '600x600' }}"
+        data-src="{{ img_url }}"
+        data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
+        data-aspectratio="{{ section.settings.cover_image.aspect_ratio }}"
+        data-sizes="auto"
+        alt="{{ section.settings.heading | escape }}">
       
       
-      
-          <img
-            srcset="{%- if section.settings.cover_image.width >= 375 -%}{{ section.settings.cover_image | img_url: '375x' }} 375w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 750 -%}{{ section.settings.cover_image | img_url: '750x' }} 750w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 1100 -%}{{ section.settings.cover_image | img_url: '1100x' }} 1100w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 1500 -%}{{ section.settings.cover_image | img_url: '1500x' }} 1500w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 1780 -%}{{ section.settings.cover_image | img_url: '1780x' }} 1780w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 2000 -%}{{ section.settings.cover_image | img_url: '2000x' }} 2000w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 3000 -%}{{ section.settings.cover_image | img_url: '3000x' }} 3000w,{%- endif -%}
-              {%- if section.settings.cover_image.width >= 3840 -%}{{ section.settings.cover_image | img_url: '3840x' }} 3840w,{%- endif -%}"
-            src="{{ section.settings.cover_image | img_url: '1920x' }}"
-            alt="{{ 'sections.video.load_video' | t: description: section.settings.description | escape }}"
-            loading="lazy"
-            width="{{ section.settings.cover_image.width }}"
-            height="{{ section.settings.cover_image.height }}"
-          >
         {%- else -%}
           <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/New_Zealand_location_map_transparent.svg" style="max-width:100%" />
         {%- endif -%}
