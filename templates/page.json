@@ -1,10 +1,21 @@
 {
   "sections": {
     "main": {
-      "type": "main-page"
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "1631265621cc264283": {
+      "type": "nz-map",
+      "settings": {
+        "heading": "NZ Map",
+        "description": "",
+        "full_width": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1631265621cc264283"
   ]
 }
